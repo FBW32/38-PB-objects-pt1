@@ -1,43 +1,111 @@
-# Objects P2
+# Objects: Part 1
 
-## Please print your answers to the console.
+Please print each of your answers to the console.
 
-#### 1. Check if a number is within a given range
-Write a program that checks if a number is within the range of an object's min and max properties. 
+**1. Object Person.**
+Create an object named person. Loop through the object and print both the property and value of the object. 
 
-Examples: 
-* 4, { min: 0, max: 5 }) ➞ true 
-* 4, { min: 4, max: 5 }) ➞ true
-* 4, { min: 6, max: 10 }) ➞ false
-* 5, { min: 5, max: 5 }) ➞ true
+**2. Convert keys and values into an array.** 
+Create a function that converts an object into an array of keys and values. 
+* Examples:
+```javascript
+objectToArray({
+  A: 1,
+  B: 2,
+  C: 3
+}) 
+```
+➞ [["A", 1], ["B", 2], ["C", 3]]
 
-* Notes: Assume min <= max is always true. 
+```javascript
+objectToArray({
+  cats: 1,
+  dogs: 2, 
+  turtles: 4
+}) 
+```
+➞ [["cats", 1], ["dogs", 2], ["turtles", 4]] 
 
-#### 2. Return Keys and Values
-Write a program that takes an object and returns the keys and values in separate arrays. 
+**3. List Properties.**
+Create a function that lists the properties of a javascript object. 
+* Example
+```javascript
+let student = {
+  name: "Mike", 
+  class: "4A" 
+  course: "English"
+}
+```
+* Expected output: 
+["name", "class", "course"]
 
-Examples: 
-* { a: 1, b: 2, c: 3 } ➞ ["a", "b", "c"], [1, 2, 3]
-* {key: true} ➞ ["key"], [true]
+**4. Get Names.**
+Create a function that takes an array of objects containing students' names e.g. {name: "John"}, and returns an array of just student names.
+* Example: 
+```javascript
+getNames([{ name: "Jane" },
+ 	  { name: "Jack" },
+ 	  { name: "John" }
+	  ])
+```
+ ➞ ["Jane", "Jack", "John"] 
 
-#### 3. Scrabble 
-Write a program that, given an array of scrabble tiles, counts the maximum score that a player can earn from the tiles in their hand. 
-Example: 
-[
-  { tile: "N", score: 1 },
-  { tile: "K", score: 5 },
-  { tile: "Z", score: 10 },
-  { tile: "X", score: 8 },
-  { tile: "D", score: 2 },
-  { tile: "A", score: 1 },
-  { tile: "E", score: 1 }
-]
+ **Bonus:** What would happen if the array includes properties other than just "name"? Demonstrate bz changing the object accordingly and comment your answer.
 
-The player's maximum score: 1 + 5 + 10 + 8 + 2 + 1 + 1 = 28
+**5. Get Values.** 
+Create a function that retrieves all values of an object's properties. 
+* Examples:
+```javascript
+getObjectValues({
+  choice1: "tea",
+  choice2: "coffee",
+  choice3: "milk"
+})
+```
+➞ ["tea", "coffee", "milk"] 
 
-#### 4. Is it an empty object? 
-Write a program that returns true if an object is empty, and false if otherwise. 
+**6. Merge.**
+Create a function that takes as its parameters two objects and merges them together into a new object. 
+* Example
+```javascript
+let first = {firstName: "John"}
+let last = {lastName: "Smith"}
+```
+* Expected output:
+```javascript
+{firstName: "John", lastName: "Smith"}
+```
+**Bonus:** What happens if you merge two objects with the same property values? In merging these two objects, do you expect do change either or both of the original objects? Why or why not? Comment your answers.
 
-Examples: 
-* {} ➞ true
-* {a: 1} ➞ false
+**7. Switch Keys and Values.**
+Create a function to get a copy of an object. The copy must switch the keys and values.
+* Example: 
+```javascript
+let person = {
+  name: "John", 
+  job: "teacher"
+}
+```
+```javascript
+* Expected Output: 
+```javascript 
+{"John": name, "teacher": job} 
+```
+
+**8. Add A Method.**
+Create an object and add a method to that object which prints the values of the objects in a string. 
+* Example
+```javascript
+let person = {
+  firstName: "Michael",
+  lastName: "Smith", 
+  job: "driver",
+  age: 20, 
+  city: Paris
+}
+```
+* Example of Expected Output 
+"Michael Smith is a 20 year old driver in Paris".
+
+**9. Clone.** 
+Create an object and clone it. 
