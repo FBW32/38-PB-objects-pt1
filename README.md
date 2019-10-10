@@ -39,20 +39,7 @@ let student = {
 * Expected output: 
 ["name", "class", "course"]
 
-**4. Get Names.**
-Create a function that takes an array of objects containing students' names e.g. {name: "John"}, and returns an array of just student names.
-* Example: 
-```javascript
-getNames([{ name: "Jane" },
- 	  { name: "Jack" },
- 	  { name: "John" }
-	  ])
-```
- ➞ ["Jane", "Jack", "John"] 
-
- **Bonus:** What would happen if the array includes properties other than just "name"? Demonstrate bz changing the object accordingly and comment your answer.
-
-**5. Get Values.** 
+**4. Get Values.** 
 Create a function that retrieves all values of an object's properties. 
 * Examples:
 ```javascript
@@ -64,7 +51,7 @@ getObjectValues({
 ```
 ➞ ["tea", "coffee", "milk"] 
 
-**6. Merge.**
+**5. Merge.**
 Create a function that takes as its parameters two objects and merges them together into a new object. 
 * Example
 ```javascript
@@ -77,7 +64,7 @@ let last = {lastName: "Smith"}
 ```
 **Bonus:** What happens if you merge two objects with the same property values? In merging these two objects, do you expect do change either or both of the original objects? Why or why not? Comment your answers.
 
-**7. Switch Keys and Values.**
+**6. Switch Keys and Values.**
 Create a function to get a copy of an object. The copy must switch the keys and values.
 * Example: 
 ```javascript
@@ -92,7 +79,7 @@ let person = {
 {"John": name, "teacher": job} 
 ```
 
-**8. Add A Method.**
+**7. Add A Method.**
 Create an object and add a method to that object which prints the values of the objects in a string. 
 * Example
 ```javascript
@@ -106,6 +93,3 @@ let person = {
 ```
 * Example of Expected Output 
 "Michael Smith is a 20 year old driver in Paris".
-
-**9. Clone.** 
-Create an object and clone it. 
