@@ -51,7 +51,16 @@ getObjectValues({
 ```
 ➞ ["tea", "coffee", "milk"] 
 
-**5. Merge.**
+**5. Return Keys and Values.**
+Write a program that takes an object and returns the keys and values in separate arrays.
+
+* Examples:
+```javascript
+{ a: 1, b: 2, c: 3 } ➞ ["a", "b", "c"], [1, 2, 3]
+{key: true} ➞ ["key"], [true]
+```
+
+**6. Merge.**
 Create a function that takes as its parameters two objects and merges them together into a new object. 
 * Example
 ```javascript
@@ -64,7 +73,7 @@ let last = {lastName: "Smith"}
 ```
 **Bonus:** What happens if you merge two objects with the same property values? In merging these two objects, do you expect do change either or both of the original objects? Why or why not? Comment your answers.
 
-**6. Switch Keys and Values.**
+**7. Switch Keys and Values.**
 Create a function to get a copy of an object. The copy must switch the keys and values.
 * Example: 
 ```javascript
@@ -79,7 +88,7 @@ let person = {
 {"John": name, "teacher": job} 
 ```
 
-**7. Add A Method.**
+**8. Add A Method.**
 Create an object and add a method to that object which prints the values of the objects in a string. 
 * Example
 ```javascript
