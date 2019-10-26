@@ -27,7 +27,7 @@ objectToArray({
 ➞ [["cats", 1], ["dogs", 2], ["turtles", 4]] 
 
 **3. List Properties.**
-Create a function that lists the properties of a javascript object. 
+Create a function that returns an array of **properties** of a javascript object. 
 * Example
 ```javascript
 let student = {
@@ -40,7 +40,7 @@ let student = {
 ["name", "class", "course"]
 
 **4. Get Values.** 
-Create a function that retrieves all values of an object's properties. 
+Create a function that returns an array of all **values** of an object's properties. 
 * Examples:
 ```javascript
 getObjectValues({
@@ -51,17 +51,8 @@ getObjectValues({
 ```
 ➞ ["tea", "coffee", "milk"] 
 
-**5. Return Keys and Values.**
-Write a program that takes an object and returns the keys and values in separate arrays.
-
-* Examples:
-```javascript
-{ a: 1, b: 2, c: 3 } ➞ ["a", "b", "c"], [1, 2, 3]
-{key: true} ➞ ["key"], [true]
-```
-
-**6. Merge.**
-Create a function that takes as its parameters two objects and merges them together into a new object. 
+**5. Merge.**
+Create a function that takes two objects as its parameters and merges them together into a new object. 
 * Example
 ```javascript
 let first = {firstName: "John"}
@@ -71,9 +62,9 @@ let last = {lastName: "Smith"}
 ```javascript
 {firstName: "John", lastName: "Smith"}
 ```
-**Bonus:** What happens if you merge two objects with the same property values? In merging these two objects, do you expect do change either or both of the original objects? Why or why not? Comment your answers.
+**Bonus:** What happens if you merge two objects with the same property values? In merging these two objects, do you expect to change either or both of the original objects? Why or why not? Comment your answers.
 
-**7. Switch Keys and Values.**
+**6. Switch Keys and Values.**
 Create a function to get a copy of an object. The copy must switch the keys and values.
 * Example: 
 ```javascript
@@ -82,13 +73,12 @@ let person = {
   job: "teacher"
 }
 ```
-```javascript
 * Expected Output: 
-```javascript 
+```javascript
 {"John": name, "teacher": job} 
 ```
 
-**8. Add A Method.**
+**7. Add A Method.**
 Create an object and add a method to that object which prints the values of the objects in a string. 
 * Example
 ```javascript
@@ -102,3 +92,13 @@ let person = {
 ```
 * Example of Expected Output 
 "Michael Smith is a 20 year old driver in Paris".
+
+
+**Bonus: Return Keys and Values.**
+Write a program that takes an object and returns an array which contains two arrays: one for the keys of the object and the other for the values of the object.
+
+* Examples:
+```javascript
+{ a: 1, b: 2, c: 3 } ➞ [["a", "b", "c"], [1, 2, 3]]
+{key: true} ➞ [["key"], [true]]
+```
