@@ -15,7 +15,10 @@ getObjectValues({
   choice3: "milk"
 })
 ```
-➞ ["tea", "coffee", "milk"] 
+* Expected output: 
+```javascript
+["tea", "coffee", "milk"] 
+```
 
 **3. Add A Method.**
 Create an object and add a method to that object which prints the values of the objects in a string. 
@@ -44,7 +47,10 @@ objectToArray({
   C: 3
 }) 
 ```
-➞ [["A", 1], ["B", 2], ["C", 3]]
+* Expected output: 
+```javascript
+[["A", 1], ["B", 2], ["C", 3]]
+```
 
 ```javascript
 objectToArray({
@@ -53,7 +59,10 @@ objectToArray({
   turtles: 4
 }) 
 ```
-➞ [["cats", 1], ["dogs", 2], ["turtles", 4]] 
+* Expected output: 
+```javascript
+[["cats", 1], ["dogs", 2], ["turtles", 4]] 
+```
 
 **2. List Properties.**
 Create a function that returns an array of **properties** of a javascript object. 
