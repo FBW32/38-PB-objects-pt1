@@ -115,5 +115,5 @@ Write a program that takes an object and returns an array which contains two arr
 {key: true} ➞ [["key"], [true]]
 ```
 
-**Hint**
+**Hint:**
 Refer to Object.keys, Object.values, Object.entries, Object.fromEntries, Object.assign and Object.getOwnPropertyNames for these exercises.
